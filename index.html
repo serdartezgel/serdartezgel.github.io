@@ -3,13 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="ou_2WNNp-W-LGAnwxqNaw2o8_1X_F1La2v1fvw2jHKI" />
+    <meta
+      name="google-site-verification"
+      content="ou_2WNNp-W-LGAnwxqNaw2o8_1X_F1La2v1fvw2jHKI"
+    />
     <title>Serdar Tezgel</title>
-  </head>
-  <body>   
-    <h1>Serdar Tezgel Apps</h1>
-    <p>Privacy policies for my apps.</p>
 
-    <a href="/infinite-labyrinth-privacy/">Infinite Labyrinth Privacy Policy</a>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 600px;
+        width: 90%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: var(--muted);
+        margin-bottom: 2rem;
+      }
+
+      .card {
+        display: block;
+        background: var(--card);
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        text-decoration: none;
+        color: var(--text);
+        transition: all 0.2s ease;
+        border: 1px solid rgba(255,255,255,0.05);
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Serdar Tezgel Apps</h1>
+      <p>Privacy policies for my apps.</p>
+
+      <a class="card" href="/infinite-labyrinth-privacy/">
+        Infinite Labyrinth Privacy Policy
+      </a>
+
+      <footer>© 2026 Serdar Tezgel</footer>
+    </div>
   </body>
 </html>
